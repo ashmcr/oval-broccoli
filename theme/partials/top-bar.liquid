@@ -1,0 +1,98 @@
+<div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="top-bar top-bar-2 w-nav">
+    <div class="container top-bar-container">
+      <div class="bi-burger w-nav-button">
+        <div class="burger-styles-embed w-embed">
+          <style>
+ .bi-burger-inner::before, .bi-burger-inner::after {
+		content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: currentColor;
+    transform-origin: center;
+    transition: bottom 0.2s 0.2s cubic-bezier(.19,1,.22,1), top 0.2s 0.2s cubic-bezier(.19,1,.22,1), transform 0.2s cubic-bezier(.19,1,.22,1);
+ }
+ .bi-burger-inner::before {
+    top: 0.9em;
+ }
+ .bi-burger-inner::after {
+    bottom: 0.9em;
+ }
+ .w-nav-button.w--open .bi-burger-inner {
+   	color: currentColor;
+ }
+ .w-nav-button.w--open .bi-burger-inner::before {
+    transition: top 0.2s cubic-bezier(.19,1,.22,1), transform 0.2s 0.2s cubic-bezier(.19,1,.22,1);
+ }
+ .w-nav-button.w--open .bi-burger-inner::after {
+    transition: bottom 0.2s cubic-bezier(.19,1,.22,1), transform 0.2s 0.2s cubic-bezier(.19,1,.22,1);
+ }
+ .w-nav-button.w--open .bi-burger-inner::before {
+    top: 0.69em;
+		transform: rotate(45deg);
+ }
+ .w-nav-button.w--open {
+	 color: #650a6e !important;
+ }
+ .w-nav-button.w--open ~ .logomark-container, 
+ .w-nav-button.w--open ~ .search-trigger-container .svg-icon-embed {
+	 color: #650a6e !important;
+ }
+ .w-nav-overlay .navigation-container .navigation-item {
+	 color: #650a6e !important;
+ }
+ .w-nav-button.w--open .bi-burger-inner::after {
+    bottom: 0.685em;
+    transform: rotate(-45deg);
+ }
+</style>
+        </div>
+        <div class="bi-burger-box">
+          <div class="bi-burger-inner"></div>
+        </div>
+      </div>
+      <a href="{{ links.2f }}" aria-current="page" class="logomark-container w-inline-block w--current"></a>
+      <nav role="navigation" class="navigation-container w-nav-menu">
+        <a href="{{ links.2cac3e3 }}" class="navigation-item w-nav-link">{{ texts.503e966f }}</a>
+        <a href="{{ links.634882d6 }}" class="navigation-item w-nav-link">{{ texts.1d52d43d }}</a>
+        <a href="{{ links.7f6f1dda }}" class="navigation-item w-nav-link">{{ texts.a60e94 }}</a>
+        <a href="{{ links.-79df24b0 }}" class="navigation-item w-nav-link">{{ texts.3b32b6d }}</a>{%- image images.-3c7bea2b.url, images.-3c7bea2b.alt, '[]', 'loading="lazy" width="30" class="image-2"' -%}
+      </nav>
+      <div data-w-id="13bdda3c-75be-4225-4eb7-550e4164841d" class="search-trigger-container">
+        <div data-w-id="94ddafa8-f575-9be6-a4cc-7a5faa5c8204" class="svg-icon-embed w-embed"><svg viewBox="0 0 24 24">
+            <path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z" fill="currentColor"></path>
+          </svg></div>
+        <div data-w-id="447166c8-939f-845b-15a3-d155d1e8696a" class="svg-icon-embed cross-icon w-embed"><svg viewBox="0 0 24 24">
+            <path d="M18.36 19.78L12 13.41L5.63997 19.78L4.21997 18.36L10.59 12L4.21997 5.63997L5.63997 4.21997L12 10.59L18.36 4.22997L19.77 5.63997L13.41 12L19.77 18.36L18.36 19.78Z" fill="#333333"></path>
+          </svg></div>
+      </div>
+    </div>
+    <div id="consentPopup2" class="cookie-notice">
+      <div id="consentBtn2" data-w-id="25cbd8af-4d9d-c8e7-70b1-a3141a236fa3" class="cookie-close-icon">
+        <div class="w-embed"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 12C24 15.1826 22.7357 18.2348 20.4853 20.4853C18.2348 22.7357 15.1826 24 12 24C8.8174 24 5.76516 22.7357 3.51472 20.4853C1.26428 18.2348 0 15.1826 0 12C0 8.8174 1.26428 5.76516 3.51472 3.51472C5.76516 1.26428 8.8174 0 12 0C15.1826 0 18.2348 1.26428 20.4853 3.51472C22.7357 5.76516 24 8.8174 24 12V12ZM17.781 7.281C17.9218 7.14017 18.0009 6.94916 18.0009 6.75C18.0009 6.55084 17.9218 6.35983 17.781 6.219C17.6402 6.07817 17.4492 5.99905 17.25 5.99905C17.0508 5.99905 16.8598 6.07817 16.719 6.219L12 10.9395L7.281 6.219C7.21127 6.14927 7.12848 6.09395 7.03738 6.05621C6.94627 6.01848 6.84862 5.99905 6.75 5.99905C6.65138 5.99905 6.55373 6.01848 6.46262 6.05621C6.37152 6.09395 6.28873 6.14927 6.219 6.219C6.14927 6.28873 6.09395 6.37152 6.05621 6.46262C6.01848 6.55373 5.99905 6.65138 5.99905 6.75C5.99905 6.84862 6.01848 6.94627 6.05621 7.03738C6.09395 7.12848 6.14927 7.21127 6.219 7.281L10.9395 12L6.219 16.719C6.07817 16.8598 5.99905 17.0508 5.99905 17.25C5.99905 17.4492 6.07817 17.6402 6.219 17.781C6.35983 17.9218 6.55084 18.0009 6.75 18.0009C6.94916 18.0009 7.14017 17.9218 7.281 17.781L12 13.0605L16.719 17.781C16.7887 17.8507 16.8715 17.906 16.9626 17.9438C17.0537 17.9815 17.1514 18.0009 17.25 18.0009C17.3486 18.0009 17.4463 17.9815 17.5374 17.9438C17.6285 17.906 17.7113 17.8507 17.781 17.781C17.8507 17.7113 17.906 17.6285 17.9438 17.5374C17.9815 17.4463 18.0009 17.3486 18.0009 17.25C18.0009 17.1514 17.9815 17.0537 17.9438 16.9626C17.906 16.8715 17.8507 16.7887 17.781 16.719L13.0605 12L17.781 7.281V7.281Z" fill="currentColor"></path>
+          </svg></div>
+      </div>
+      <div class="cookie-notice-text">{{ texts.-55978cf7 }}<a href="{{ links.-6debaf14 }}" class="cookie-policy-link">{{ texts.6aab4a6e }}</a>{{ texts.2e }}</div>
+      <div class="cookie-embed w-embed w-script">
+        <script type="text/javascript">
+ var popup = document.getElementById('consentPopup2');
+ var alreadyLoaded = window.localStorage.getItem('website-cookieConsent2') === 'true';
+ var consentBtn = document.getElementById('consentBtn2');
+ if (alreadyLoaded) {
+   popup.style.display = 'none';
+	 popup.style.transform = 'translateY(100vh)'
+ } else {
+   popup.style.display = 'flex';
+	 popup.style.opacity = '1';
+ }
+ consentBtn.addEventListener("click", function() {
+   window.localStorage.setItem('website-cookieConsent2', 'true');
+	 popup.style.opacity = '0';
+	 popup.style.transform = 'translateY(100vh)'
+ });
+</script>
+      </div>
+    </div>
+  </div>

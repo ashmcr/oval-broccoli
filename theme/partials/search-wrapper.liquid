@@ -1,0 +1,18 @@
+<div class="search-wrapper">
+    <div class="search-container">
+      <form action="/search" class="search-field w-form"><input type="search" class="search-input w-input" maxlength="256" name="query" placeholder="Find resources, answers, and advice" id="search" required=""><input type="submit" value="Search" class="button w-button"></form>
+      <div class="featured-resources">
+        <h3>{{ texts.78b6a0d3 }}</h3>
+        {%- assign collection = collections.resources | filter: "f_featured,eq,true", "ALL", page.inputPath | sort: "-created-on" | limit: 3 -%}<div class="featured-resources-collection w-dyn-list">
+          {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
+            {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
+              <a href="{{ item.url }}" class="featured-resource">{{ item.data.title }}</a>
+            </div>{%- endfor -%}
+          </div>{%- endunless -%}
+          {%- if collection.length == 0 -%}<div class="w-dyn-empty">
+            <div>{{ texts.3d503d2b }}</div>
+          </div>{%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
